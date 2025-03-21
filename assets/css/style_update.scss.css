@@ -1,0 +1,59 @@
+.page {
+    min-height: 550px
+}
+
+.pagecontact_ggmap iframe {
+    width: 100%
+}
+
+.grecaptcha-badge {
+    display: none
+}
+
+.cf::after,
+.cf::before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.rte img,
+.rte p img,
+.rte span img {
+    height: auto !important;
+    max-width: 100% !important
+}
+
+.bizweb-product-reviews-form {
+    min-width: 240px !important
+}
+
+fieldset {
+    border: unset
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="button"],
+input[type="email"],
+input[type="submit"],
+input[type="number"] {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+.wishlist-page-body .wishlist-grid-view .wishlist-view-page .wishlist-product .wishlist-product-content .wishlist-product-name {
+    min-height: 93px;
+    display: block
+}
+
+@media (max-width: 767px) {
+    .header-main .box-right {
+        margin-top: 0
+    }
+
+    .header-main .logo img {
+        max-height: 35px
+    }
+}
