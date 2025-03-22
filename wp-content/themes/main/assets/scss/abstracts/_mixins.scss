@@ -1,0 +1,186 @@
+@import "variables";
+
+$xxs: "only screen and (max-width: 320px)";
+$xs: "only screen and (max-width: 575.98px)";
+$sm: "only screen and (min-width: 576px)";
+$md: "only screen and (min-width: 768px)";
+$lg: "only screen and (min-width: 992px)";
+$xl: "only screen and (min-width: 1600px)";
+$xxl: "only screen and (min-width: 1200px)";
+
+// Responsive
+@mixin xxs() {
+    @media #{$xxs} {
+        @content;
+    }
+}
+
+@mixin xs() {
+    @media #{$xs} {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media #{$sm} {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media #{$md} {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media #{$lg} {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media #{$xl} {
+        @content;
+    }
+}
+
+@mixin xxl() {
+    @media #{$xxl} {
+        @content;
+    }
+}
+
+// Custom responsive
+@mixin mediaMaxWidth($breakpoints) {
+    @media only screen and (max-width: $breakpoints) {
+        @content;
+    }
+}
+
+@mixin mediaMinWidth($breakpoints) {
+    @media only screen and (min-width: $breakpoints) {
+        @content;
+    }
+}
+
+@mixin mediaMinMaxWidth($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+
+// Position fixed
+@mixin position($type: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+    position: $type;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    top: $top;
+}
+
+@mixin positionTransform($top: 50%, $left: 50%) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translateX(-#{$left}) translateY(-#{$top});
+}
+
+@mixin positionCenter($width, $height: 0) {
+    position: absolute;
+
+    @if $height !=0 {
+        top: calc(50% - (#{$height} / 2));
+        left: calc(50% - (#{$width} / 2));
+    }
+
+    @else {
+        top: calc(50% - (#{$width} / 2));
+        left: calc(50% - (#{$width} / 2));
+    }
+}
+
+
+
+// Hamburger
+@mixin hamburger($dimensions, $speed: 0.2s, $easing: ease-in-out, $width: 16px, $height: 1px, $mb: 3px) {
+    cursor: pointer;
+    @include flexCenterDirection(column);
+    height: $dimensions;
+    position: relative;
+    width: $dimensions;
+
+    span {
+        background-color: currentColor;
+        display: block;
+        height: $height;
+        transform-origin: center;
+        transition-duration: $speed;
+        transition-property: background-color, opacity, transform;
+        transition-timing-function: $easing;
+        width: $width;
+        margin-bottom: $mb;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(black, 0.05);
+    }
+
+    // Modifiers
+    &.is-active {
+        span {
+            &:nth-child(1) {
+                transform: translateY(5px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-5px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+
+// Clearfix
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+
+@mixin wordBreak($line, $height) {
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: $height;
+}
+
+@mixin aspect-ratio($width, $height) {
+    padding-top: percentage($number: $height/$width);
+    width: 100%;
+    position: relative;
+    
+    img,
+    svg,
+    iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
