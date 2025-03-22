@@ -67,6 +67,7 @@ class MainCore
         wp_enqueue_script('owl', THEME_URI . '/assets/js/owl.carousel.min.js', array('jquery'), false, true);
         wp_enqueue_script('validator', THEME_URI . '/assets/js/scripts/form-validation.min.js', array('jquery'), false, true);
         wp_enqueue_script('scripts', THEME_URI . '/assets/js/scripts/scripts.min.js', array('jquery'), false, true);
+        // wp_enqueue_script('mainjs', THEME_URI . '/assets/js/scripts/main.min.js', array('jquery'), false, true);
         $wp_script_data = array(
             'AJAX_URL' => ADMIN_AJAX_URL,
             'HOME_URL' => HOME_URL

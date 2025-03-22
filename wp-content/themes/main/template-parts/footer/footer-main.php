@@ -10,7 +10,7 @@
 
                         <a href="/" class="logo-wrapper " title="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
                             <img class="img-responsive"
-                                src="//bizweb.dktcdn.net/thumb/medium/100/380/977/themes/759269/assets/logo.png?1734335154245"
+                                src="<?= THEME_ASSETS ?>/images/logo.png"
                                 alt="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
                         </a>
 
