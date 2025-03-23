@@ -1,10 +1,17 @@
-<a class="btn-call-now" href="tel:0376877668">
+<?php
+
+$footer = get_field('footer', 'option');
+$hotline_1 = isset($footer['hotline_1']) ? esc_html($footer['hotline_1']) : '';
+$hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
+$zalo = isset($footer['zalo']) ? esc_html($footer['zalo']) : '';
+?>
+<a class="btn-call-now" href="tel:<?= $hotline_1 ?>">
     <i class="fa fa-phone"></i>
-    <span> 037 687 7668</span>
+    <span><?= $hotline_1 ?></span>
 </a>
-<a class="btn-call-now v2" href="tel:0813132686">
+<a class="btn-call-now v2" href="tel:<?= $hotline_2 ?>">
     <i class="fa fa-phone"></i>
-    <span>081 313 2686</span>
+    <span><?= $hotline_2 ?></span>
 </a>
 <style>
     /* hotline */
@@ -86,7 +93,7 @@
     }
 </style>
 <div id="_zalo" style="position: FIXED; Z-INDEX: 99999; BOTTOM: 88px; right: 17px;">
-    <a href="https://zalo.me/0376877668" target="_blank" alt="chat zalo">
+    <a href="https://zalo.me/<?= $zalo ?>" target="_blank" alt="chat zalo">
         <img border="0" src="./assets/icon-menu-right2.png" alt="zalo" title="zalo" style="width: 50px;">
     </a>
 </div>

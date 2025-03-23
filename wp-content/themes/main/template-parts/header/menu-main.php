@@ -1,22 +1,19 @@
+<?php
+
+$footer = get_field('footer', 'option');
+$hotline_1 = isset($footer['hotline_1']) ? esc_html($footer['hotline_1']) : '';
+$hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
+?>
+
 <div class="topbar">
     <div class="container">
         <div class="left">
             <ul class="list-menu has-toggle social-media">
-
-
-
-
-
-
-
             </ul>
         </div>
-        <a class="right" href="tel:0813132686" title="Phone"><i class="fa fa-phone-square"></i> 0813 132 686</a>
+        <a class="right" href="tel:<?= $hotline_1 ?>" title="Phone"><i class="fa fa-phone-square"></i> <?= $hotline_1 ?></a>
         <span class="right" style="margin:0 5px;display:inline-block;"></span>
-        <a class="right" href="tel:0376877668" title="Phone"><i class="fa fa-phone-square"></i> 0376 877 668</a>
-
-
-
+        <a class="right" href="tel:<?= $hotline_2 ?>" title="Phone"><i class="fa fa-phone-square"></i> <?= $hotline_2 ?></a>
     </div>
     <!--End topbar-->
 </div>
@@ -27,11 +24,9 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
             <div class="logo">
-
-                <a href="/" class="logo-wrapper " title="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
-                    <img class="img-responsive" src="//bizweb.dktcdn.net/thumb/medium/100/380/977/themes/759269/assets/logo.png?1734335154245" alt="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
+                <a href="/" class="logo-wrapper " title="<?= get_bloginfo('name') ?>">
+                    <img class="img-responsive" src="<?= THEME_ASSETS ?>/images/logo.png" alt="<?= get_bloginfo('name') ?>">
                 </a>
-
             </div>
             <div class="main-nav">
                 <nav>
@@ -151,7 +146,7 @@
                     </ul>
                 </nav>
             </div>
-        
+
         </div>
     </div>
 </div>

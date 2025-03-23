@@ -1,5 +1,13 @@
-<div class="back-to-top show"><i class="fa fa fa-arrow-up"></i></div>
+<?php
 
+$footer = get_field('footer', 'option');
+$address = isset($footer['address']) ? wp_kses_post($footer['address']) : '';
+$hotline_1 = isset($footer['hotline_1']) ? esc_html($footer['hotline_1']) : '';
+$hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
+$email = isset($footer['email']) ? esc_html($footer['email']) : '';
+$copyright = isset($footer['copyright']) ? esc_html($footer['copyright']) : '';
+?>
+<div class="back-to-top show"><i class="fa fa fa-arrow-up"></i></div>
 <div class="site-footer">
     <div class="container">
         <div class="footer-inner">
@@ -18,33 +26,20 @@
                             <li class="item">
 
                                 <div class="address">
-                                    <b>Địa chỉ:</b>
-
-                                    <br><b>Văn Phòng:</b> KĐT Xuân Phương Garden, phường Phương Canh, quận Nam
-                                    Từ Liêm, Hà Nội <br>
-                                    <b>Nhà máy ADVANCE Việt Nam:</b> KCN Long Giang, Tân Lập 1, Huyện Tân Phước,
-                                    Tỉnh Tiền Giang
-
+                                    <?= $address ?>
                                 </div>
-
-
                                 <div class="phone"><b>Hotline:</b>
 
-                                    <a href="tel:0813132686" title="Phone">0813 132 686</a>
+                                    <a href="tel:<?= $hotline_1 ?>" title="Phone"><?= $hotline_1 ?></a>
 
                                     <i> / </i>
-                                    <a href="tel:0376877668" title="Phone">0376 877 668</a>
+                                    <a href="tel:<?= $hotline_2  ?>" title="Phone"><?= $hotline_2 ?></a>
                                 </div>
 
                                 <div class="email"><b>Email:</b>
-
-                                    <a href="mailto:lopsamsonvietnam@gmail.com">lopsamsonvietnam@gmail.com</a>
-
+                                    <a href="mailto:<?= $email ?>"><?= $email ?></a>
                                 </div>
-
-
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -54,19 +49,12 @@
                             <span>Thông tin</span>
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </h4>
-
                         <ul class="list-menu has-toggle">
-
                             <li><a href="/" title="Trang chủ">Trang chủ</a></li>
-
                             <li><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-
                             <li><a href="/collections/all" title="Sản phẩm">Sản phẩm</a></li>
-
                             <li><a href="/tin-tuc" title="Tin tức">Tin tức</a></li>
-
                             <li><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
-
                         </ul>
                     </div>
                 </div>
@@ -111,14 +99,13 @@
         </div>
     </div>
 </div>
-
 <div class="copyright clearfix">
     <div class="container">
         <div class="inner clearfix">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="text-center copy-right-text">
-                        © Bản quyền thuộc về CÔNG TY TNHH LỐP SAMSON VIỆT NAM
+                        <?= $copyright ?>
                     </div>
                 </div>
             </div>

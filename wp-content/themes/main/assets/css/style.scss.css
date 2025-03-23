@@ -4,7 +4,7 @@
  */
 @font-face {
     font-family: 'FontAwesome';
-    src: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/fontawesome-webfont.woff?1734334363291);
+    src: url(../fonts/fontawesome-webfont.woff);
     font-display: swap;
     font-weight: normal;
     font-style: normal
@@ -3254,7 +3254,7 @@ body.modal-open {
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/cart_icon.png?1734334363291");
+    /* background-image: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/cart_icon.png?1734334363291"); */
     background-repeat: no-repeat;
     position: absolute;
     top: 22px;
@@ -4121,7 +4121,7 @@ footer form button#subscribe {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-plus.jpg?1734334363291") no-repeat scroll bottom 3px left 3px;
+    background: url("../images/old-image/icon-plus.jpg") no-repeat scroll bottom 3px left 3px;
     right: 0px;
     top: 15px
 }
@@ -5638,7 +5638,7 @@ span.wrp.effect-2 img {
 
 @media (min-width: 481px) {
     .section_banner.bg-images-banner {
-        background-image: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/module_banner1.png?1734334363291) !important
+        /* background-image: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/module_banner1.png?1734334363291) !important */
     }
 }
 
@@ -5658,13 +5658,13 @@ span.wrp.effect-2 img {
 }
 
 .address-title button.btn-edit {
-    background-image: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/btn-edit.png?1734334363291);
+    background-image: url(../images/old-image/btn-edit.png);
     background-repeat: no-repeat;
     background-position: center
 }
 
 .address-title button.btn-delete {
-    background-image: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/btn-delete.png?1734334363291);
+    background-image: url(../images/old-image/btn-delete.png);
     background-repeat: no-repeat;
     background-position: center
 }
@@ -6259,7 +6259,7 @@ div#isp_search_result_page_container form {
 }
 
 .footer-map__title {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/footer_map_icon.png?1734334363291) no-repeat 0% 4px;
+    /* background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/footer_map_icon.png?1734334363291) no-repeat 0% 4px; */
     padding-left: 50px;
     margin-bottom: 20px
 }
@@ -7602,7 +7602,7 @@ section.product {
     margin-left: 0px;
     left: 0px;
     height: 3px;
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/line.png?1734334363291)
+    background: url(../images/old-image/line.png)
 }
 
 .heading-title .heading-title__title.title_align_left a:hover span {
@@ -8850,7 +8850,7 @@ span.vendor_.frist .vendor {
 }
 
 .section_spotlight .bg-spo {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/bg-spo.png?1734334363291) no-repeat left center;
+    /* background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/bg-spo.png?1734334363291) no-repeat left center; */
     padding: 15px
 }
 
@@ -9664,59 +9664,59 @@ footer {
 }
 
 .section-about .content-text .title {
-    background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/hd1.png?1734334363291") no-repeat scroll center bottom 15px
+    /* background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/hd1.png?1734334363291") no-repeat scroll center bottom 15px */
 }
 
 .dichvu-chucnang .inner p:before {
-    background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon_tick.png?1734334363291") no-repeat
+    /* background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon_tick.png?1734334363291") no-repeat */
 }
 
 .box-dat-ban:before {
-    background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/form-tu-van-v2_2.png?1734334363291") no-repeat scroll right bottom
+    /* background: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/form-tu-van-v2_2.png?1734334363291") no-repeat scroll right bottom */
 }
 
 .main-nav nav .mega-content {
-    background: #fff url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/bg-megamenu.jpg?1734334363291") no-repeat scroll bottom 10px right 10px
+    background: #fff url("../images/old-image/bg-megamenu.jpg") no-repeat scroll bottom 10px right 10px
 }
 
 .title-text:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -29px -168px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -29px -168px
 }
 
 .wrap-product-sale .wrap-time:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -17px -223px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -17px -223px
 }
 
 footer .site-footer h4:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -32px -131px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -32px -131px
 }
 
 footer .list-menu.infomation li div.address:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -25px -19px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -25px -19px
 }
 
 footer .list-menu.infomation li div.phone:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -86px -19px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -86px -19px
 }
 
 footer .list-menu.infomation li div.email:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -152px -19px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -152px -19px
 }
 
 footer .list-menu.infomation li div.clock:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-image.png?1734334363291) no-repeat scroll -219px -18px
+    background: url(../images/old-image/icon-image.png) no-repeat scroll -219px -18px
 }
 
 .aside-title h2:before {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/icon-car.png?1734334363291) no-repeat scroll 8px 14px
+    background: url(../images/old-image/icon-car.png) no-repeat scroll 8px 14px
 }
 
 .bread-crumb {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/bg-bcrum.jpg?1734334363291) no-repeat scroll 0px 0px
+    background: url(../images/old-image/bg-bcrum.jpg) no-repeat scroll 0px 0px
 }
 
 .best-seller-product {
-    background: url(//bizweb.dktcdn.net/100/380/977/themes/759269/assets/bg-best-seller.jpg?1734334363291)
+    background: url(../images/old-image/bg-best-seller.jpg)
 }
 
 body {
@@ -11557,7 +11557,7 @@ span.vendor_.frist .vendor a {
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/cart_icon.png?1734334363291");
+    /* background-image: url("//bizweb.dktcdn.net/100/380/977/themes/759269/assets/cart_icon.png?1734334363291"); */
     background-repeat: no-repeat;
     position: absolute;
     top: 22px;
@@ -12781,7 +12781,7 @@ button.btn.btn-lg.btn-gray.btn-cart.add_to_cart.btn_buy.add_to_cart:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("https://bizweb.dktcdn.net/100/351/580/files/coffee-bg.jpg?v=1554710957210");
+    background-image: url("../images/old-image/coffee-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

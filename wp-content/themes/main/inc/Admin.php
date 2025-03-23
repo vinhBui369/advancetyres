@@ -21,7 +21,7 @@ function custom_type_admin()
         }
 
         .login.wp-core-ui {
-            background-image: url('<?php echo LOGO_LOGIN_ADMIN_W ?>');
+            /* background-image: url('<?php echo LOGO_LOGIN_ADMIN_W ?>'); */
             background-color: #F5F5FA;
             background-size: 180px auto;
             background-attachment: fixed;
