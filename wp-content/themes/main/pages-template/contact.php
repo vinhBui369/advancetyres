@@ -15,7 +15,7 @@ $page_contact_address = get_field('page_contact_address', $id);
                     <div class="title-page"><?php the_title() ?></div>
                     <ul class="breadcrumb" itemscope="" itemtype="">
                         <li class="home">
-                            <a itemprop="url" href="/" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>
+                            <a itemprop="url" href="<?= HOME_URL ?>" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </li>
                         <li><strong><span itemprop="title"><?php the_title() ?></span></strong></li>
