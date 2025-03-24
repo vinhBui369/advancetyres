@@ -12855,7 +12855,7 @@ ul.tabs li.current {
     text-indent: .01px;
     cursor: pointer;
     line-height: 36px;
-    background-image: url(ico-selects.png) !important
+    background-image: url(../images/old-image/ico-selects.png) !important
 }
 
 #sort-by li {

@@ -51,24 +51,6 @@ function login_logo_url()
  * footer
  */
 
-function banv_admin_footer($text)
-{
-    $text = '<p id="footer-left" class="alignleft">
-                <span>
-                    Email: <a href="mailto:info@twinger.vn">info@twinger.vn</a> | phone: <a href="mailto:+84 933 886 556">+84 933 886 556</a>
-                </span>
-                <br>
-                <span>
-                    Location: 21th floor, Song Da Building (HH4 Tower), 18 Pham Hung, My Dinh, Hanoi
-                </span>
-                <br>
-                <span>
-                    Copyright © 2021 by Twinger. All rights reserved
-                </span> 
-            </p>';
-    return $text;
-}
-add_filter('admin_footer_text', 'banv_admin_footer');
 
 /**
  * edit favicon admin

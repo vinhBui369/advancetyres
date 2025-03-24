@@ -121,8 +121,8 @@ function wp_paginate_paged($custom_query = null, $paged = null) {
         'current' => max( 1, $paged ),
         'total' => $total,
         'mid_size' => '10',
-        'prev_text'    => __('<','corex'),
-        'next_text'    => __('>','corex'),
+        'prev_text'    => __('«','corex'),
+        'next_text'    => __('»','corex'),
     ) );
     if($total > 1) echo '</div>';
 }

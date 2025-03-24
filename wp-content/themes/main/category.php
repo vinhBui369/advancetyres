@@ -7,6 +7,11 @@ $cat_name = $cat->name;
 $cat_description = $cat->description;
 $cat_link = get_category_link($cat_id);
 
+$categories = get_terms(array(
+    'taxonomy' => 'categories-collections',
+    'hide_empty' => false,
+    'parent' => 2,
+));
 ?>
 <section class="bread-crumb">
     <span class="crumb-border"></span>
@@ -81,36 +86,12 @@ $cat_link = get_category_link($cat_id);
                 </div>
                 <div class="categories-box">
                     <ul class="lv1">
+                        <?php foreach ($categories as $value): ?>
 
-
-
-                        <li class="nav-item nav-items ">
-                            <a href="/lop-xe-tai-mo" title="LỐP XE TẢI MỎ">
-                                LỐP XE TẢI MỎ</a>
-                        </li>
-
-
-
-                        <li class="nav-item nav-items ">
-                            <a href="/lop-cang" title="LỐP CẢNG">
-                                LỐP CẢNG</a>
-                        </li>
-
-
-
-                        <li class="nav-item nav-items ">
-                            <a href="/lop-cau-chuyen-dung" title="LỐP CẨU CHUYÊN DỤNG">
-                                LỐP CẨU CHUYÊN DỤNG</a>
-                        </li>
-
-
-
-                        <li class="nav-item nav-items ">
-                            <a href="/lop-cong-trinh" title="LỐP CÔNG TRÌNH">
-                                LỐP CÔNG TRÌNH</a>
-                        </li>
-
-
+                            <li class="nav-item nav-items ">
+                                <a href="<?= get_term_link($value->term_id) ?>" title="<?= $value->name ?>"> <?= $value->name ?> </a>
+                            </li>
+                        <?php endforeach ?>
                     </ul>
                 </div>
             </aside>

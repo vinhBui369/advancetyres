@@ -55,8 +55,7 @@ class MainCore
     {
         // //libs css
         // wp_enqueue_style('style_update', THEME_ASSETS . '/css/style_update.scss.css');
-        // wp_enqueue_style('base', THEME_ASSETS . '/css/base.scss.css');
-        // wp_enqueue_style('styles2', THEME_ASSETS . '/css/style.scss.css');
+        // wp_enqueue_style('styles', THEME_URI . '/css/style.scss.css');
 
         //libs js
         wp_enqueue_script('validator', THEME_URI . '/assets/js/scripts/form-validation.min.js', array('jquery'), false, true);
