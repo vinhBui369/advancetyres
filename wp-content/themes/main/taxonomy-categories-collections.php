@@ -31,7 +31,7 @@ $categories = get_terms(array(
 // query all post type collections and pagination
 $args = array(
     'post_type' => 'collections',
-    'posts_per_page' => 3,
+    'posts_per_page' => 8,
     'orderby' => 'date',
     'order' => 'DESC',
     'post_status' => 'publish',
@@ -109,7 +109,7 @@ $args = array(
                     <div class="title-page">Tất cả sản phẩm</div>
                     <ul class="breadcrumb" itemscope="" itemtype="">
                         <li class="home">
-                            <a itemprop="url" href="/" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>
+                            <a itemprop="url" href="<?= HOME_URL ?>" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </li>
                         <li><strong><span itemprop="title"> Tất cả sản phẩm</span></strong></li>
@@ -355,12 +355,6 @@ $args = array(
                             <ul></ul>
                         </div>
                     </div>
-
-
-
-
-
-
 
 
 

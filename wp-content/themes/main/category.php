@@ -22,7 +22,7 @@ $categories = get_terms(array(
                     <div class="title-page"><?= $cat_name ?></div>
                     <ul class="breadcrumb" itemscope="" itemtype="">
                         <li class="home">
-                            <a itemprop="url" href="/" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>
+                            <a itemprop="url" href="<?= HOME_URL ?>" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </li>
                         <li><strong><span itemprop="<?= $cat_name ?>"><?= $cat_name ?></span></strong></li>

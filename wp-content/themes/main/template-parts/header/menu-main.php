@@ -24,14 +24,14 @@ $hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
             <div class="logo">
-                <a href="/" class="logo-wrapper " title="<?= get_bloginfo('name') ?>">
+                <a href="<?= HOME_URL ?>" class="logo-wrapper " title="<?= get_bloginfo('name') ?>">
                     <img class="img-responsive" src="<?= THEME_ASSETS ?>/images/logo.png" alt="<?= get_bloginfo('name') ?>">
                 </a>
             </div>
             <div class="main-nav">
                 <nav>
                     <ul id="nav" class="nav hidden-sm hidden-xs">
-                        <li class="hidden-sm hidden-xs nav-item active"><a class="nav-link" href="/" title="Trang chủ">Trang chủ</a></li>
+                        <li class="hidden-sm hidden-xs nav-item active"><a class="nav-link" href="<?= HOME_URL ?>" title="Trang chủ">Trang chủ</a></li>
                         <li class="hidden-sm hidden-xs nav-item "><a class="nav-link" href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
                         <li class="hidden-sm hidden-xs nav-item  has-dropdown">
                             <a href="/collections/all" title="Sản phẩm" class="nav-link">Sản phẩm <i class="fa fa-angle-down" data-toggle="dropdown"></i></a>
@@ -55,7 +55,7 @@ $hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
                         <li class="hidden-sm hidden-xs nav-item "><a class="nav-link" href="/tin-tuc" title="Tin tức">Tin tức</a></li>
                         <li class="hidden-sm hidden-xs nav-item "><a class="nav-link" href="/lien-he" title="Liên hệ">Liên hệ</a></li>
                         <!-- menu mobile -->
-                        <li class="hidden-lg hidden-md nav-item active"><a class="nav-link" href="/" title="Trang chủ">Trang chủ</a></li>
+                        <li class="hidden-lg hidden-md nav-item active"><a class="nav-link" href="<?= HOME_URL ?>" title="Trang chủ">Trang chủ</a></li>
                         <li class="hidden-lg hidden-md nav-item "><a class="nav-link" href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
                         <li class="hidden-lg hidden-md nav-item  has-dropdown">
                             <a href="/collections/all" title="Sản phẩm" class="nav-link">Sản phẩm <i class="fa fa-angle-down" data-toggle="dropdown"></i></a>
@@ -81,7 +81,7 @@ $hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
                     </ul>
                     <ul class="nav hidden-lg nav-mobile">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/" title="Trang chủ">
+                            <a class="nav-link" href="<?= HOME_URL ?>" title="Trang chủ">
                                 Trang chủ
                             </a>
                         </li>

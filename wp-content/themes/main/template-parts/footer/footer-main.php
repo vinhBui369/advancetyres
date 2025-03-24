@@ -6,6 +6,16 @@ $hotline_1 = isset($footer['hotline_1']) ? esc_html($footer['hotline_1']) : '';
 $hotline_2 = isset($footer['hotline_2']) ? esc_html($footer['hotline_2']) : '';
 $email = isset($footer['email']) ? esc_html($footer['email']) : '';
 $copyright = isset($footer['copyright']) ? esc_html($footer['copyright']) : '';
+
+
+$footer_title_menu_1 = isset($footer['footer_title_menu_1']) ? esc_html($footer['footer_title_menu_1']) : '';
+$footer_menu_1 = isset($footer['footer_menu_1']) ? $footer['footer_menu_1'] : [];
+$footer_title_menu_2 = isset($footer['footer_title_menu_2']) ? esc_html($footer['footer_title_menu_2']) : '';
+$footer_menu_2 = isset($footer['footer_menu_2']) ? $footer['footer_menu_2'] : [];
+$footer_title_menu_3 = isset($footer['footer_title_menu_3']) ? esc_html($footer['footer_title_menu_3']) : '';
+$footer_menu_3 = isset($footer['footer_menu_3']) ? $footer['footer_menu_3'] : [];
+
+
 ?>
 <div class="back-to-top show"><i class="fa fa fa-arrow-up"></i></div>
 <div class="site-footer">
@@ -16,7 +26,7 @@ $copyright = isset($footer['copyright']) ? esc_html($footer['copyright']) : '';
                 <div class="block block-cs col-xs-12 col-sm-12 col-md-5 col-lg-5">
                     <div class="footer-widget">
 
-                        <a href="/" class="logo-wrapper " title="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
+                        <a href="<?= HOME_URL ?>" class="logo-wrapper " title="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
                             <img class="img-responsive"
                                 src="<?= THEME_ASSETS ?>/images/logo.png"
                                 alt="CÔNG TY TNHH LỐP SAMSON VIỆT NAM">
@@ -46,34 +56,30 @@ $copyright = isset($footer['copyright']) ? esc_html($footer['copyright']) : '';
                 <div class="block block-cs col-xs-12 col-sm-4 col-md-2 col-lg-2 col-md-offset-1">
                     <div class="footer-widget">
                         <h4>
-                            <span>Thông tin</span>
+                            <span><?= $footer_title_menu_1 ?></span>
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </h4>
                         <ul class="list-menu has-toggle">
-                            <li><a href="/" title="Trang chủ">Trang chủ</a></li>
-                            <li><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-                            <li><a href="/collections/all" title="Sản phẩm">Sản phẩm</a></li>
-                            <li><a href="/tin-tuc" title="Tin tức">Tin tức</a></li>
-                            <li><a href="/lien-he" title="Liên hệ">Liên hệ</a></li>
+
+                            <?php foreach ($footer_menu_1 as $value): ?>
+                                <li><a href="<?= $value['link'] ? $value['link'] : '#'  ?>" title="<?= $value['name'] ? $value['name'] : '' ?>">
+                                    <?= $value['name'] ? $value['name'] : '' ?></a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                 </div>
                 <div class="block block-cs col-xs-12 col-sm-4 col-md-2 col-lg-2">
                     <div class="footer-widget">
                         <h4>
-                            <span>Sản phẩm</span>
+                            <span><?= $footer_title_menu_2 ?></span>
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </h4>
                         <ul class="list-menu has-toggle">
 
-                            <li><a href="/lop-xe-tai-mo" title="LỐP XE TẢI MỎ">LỐP XE TẢI MỎ</a></li>
 
-                            <li><a href="/lop-cang" title="LỐP CẢNG">LỐP CẢNG</a></li>
-
-                            <li><a href="/lop-cau-chuyen-dung" title="LỐP CẨU CHUYÊN DỤNG">LỐP CẨU CHUYÊN
-                                    DỤNG</a></li>
-
-                            <li><a href="/lop-cong-trinh" title="LỐP CÔNG TRÌNH">LỐP CÔNG TRÌNH</a></li>
+                            <?php foreach ($footer_menu_2 as $value): ?>
+                                <li><a href="<?= $value['link'] ? $value['link'] : '#'  ?>" title="<?= $value['name'] ? $value['name'] : '' ?>"><?= $value['name'] ? $value['name'] : '' ?></a></li>
+                            <?php endforeach; ?>
 
                         </ul>
                     </div>
@@ -81,16 +87,15 @@ $copyright = isset($footer['copyright']) ? esc_html($footer['copyright']) : '';
                 <div class="block block-cs col-xs-12 col-sm-4 col-md-2 col-lg-2">
                     <div class="footer-widget">
                         <h4>
-                            <span>Lốp xe</span>
+                            <span><?= $footer_title_menu_3 ?></span>
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </h4>
                         <ul class="list-menu has-toggle">
 
-                            <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                            <?php foreach ($footer_menu_3 as $value): ?>
+                                <li><a href="<?= $value['link'] ? $value['link'] : '#'  ?>" title="<?= $value['name'] ? $value['name'] : '' ?>"><?= $value['name'] ? $value['name'] : '' ?></a></li>
+                            <?php endforeach; ?>
 
-                            <li><a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a></li>
-
-                            <li><a href="/collections/all" title="Sản phẩm">Sản phẩm</a></li>
 
                         </ul>
                     </div>

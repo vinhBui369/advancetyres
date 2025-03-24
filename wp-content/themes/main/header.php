@@ -13,7 +13,7 @@
     <link href="<?= THEME_ASSETS ?>/css/style.scss.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="style" type="text/css" href="<?= THEME_ASSETS ?>/css/style_update.scss.css">
     <link href="<?= THEME_ASSETS ?>/css/style_update.scss.css" rel="stylesheet" type="text/css" media="all" />
-
+   
     <?php wp_head(); ?>
 </head>
 
